@@ -1,12 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import '../styles/NavBar.css'
+import cartIcon from '../assets/icons/shoppingCart.png';
 
 function NavBar() {
   return (
-    <div className='navBar'>
-      <Link to='/shop'>Shop</Link>
-      <Link to='/'>Home</Link>
+    <div className='nav-bar'>
+      <div className='text-links'>
+        <Link to='/'>Home</Link>
+        <Link to='/shop'>Shop</Link>
+      </div>
+      <div>
+        <Link to='/cart'>
+          <img src={cartIcon} alt='Shopping Cart' className = 'cart-icon'></img>
+        </Link>
+      </div>
     </div>
   )
 }

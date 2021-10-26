@@ -1,7 +1,18 @@
-.navBar {
+.nav-bar {
   display: flex;
-  justify-content: flex-start;
-  gap: 30px;
-  padding: 10px 30px;
-  background: blanchedalmond;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgb(246, 246, 248);
+}
+
+.text-links {
+  display: flex;
+  gap: 15px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.cart-icon {
+  height: 25px;
 }

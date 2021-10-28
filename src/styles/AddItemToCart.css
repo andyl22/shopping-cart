@@ -4,9 +4,10 @@
   align-items: center;
   padding: 5px 0px;
   width: 100%;
-  background: rgb(235, 235, 235);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  background: rgb(220, 163, 144);
+  border-bottom-left-radius: 27px;
+  border-bottom-right-radius: 27px;
+  border-top: 2px solid black;
 }
 
 .quantity-control {
@@ -17,9 +18,13 @@
   padding: 10px 0px 10px 20px;
 }
 
-.quantity-control p {
+.quantity-control p, .add-to-cart p {
   font-size: 21px;
   color: rgb(68, 68, 68);
+}
+
+.add-to-cart p {
+  margin-top: 3px;
 }
 
 .fa-quantity {

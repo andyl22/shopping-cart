@@ -3,8 +3,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background: rgb(246, 246, 248);
-  border-bottom: 5px solid rgb(20, 114, 12);
+  background: #ecf5ff;
+  border-bottom: 5px solid rgb(129, 209, 122);
 }
 
 .text-links {
@@ -12,8 +12,10 @@
   gap: 15px;
   font-weight: 600;
   font-size: 16px;
+  color: white;
 }
 
 .cart-icon {
   height: 25px;
+  color: white;
 }

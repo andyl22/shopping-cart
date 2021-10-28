@@ -2,33 +2,47 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 10px;
-  width: 100px;
+  padding: 5px 0px;
+  width: 100%;
+  background: rgb(235, 235, 235);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .quantity-control {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
   font-weight: bolder;
+  padding: 10px 0px 10px 20px;
 }
 
-.quantity-control p:hover{
+.quantity-control p {
+  font-size: 21px;
+  color: rgb(68, 68, 68);
+}
+
+.fa-quantity {
+  font-size: 12px;
+}
+
+.fa-quantity:hover{
   cursor: pointer;
-  transform: scale(1.05);
+  transform: scale(1.2);
 }
 
 .add-to-cart {
   display: flex;
   align-items: center;
   gap: 5px;
+  padding: 10px 15px 10px 0px;
 }
 
-.add-to-cart img {
-  height: 20px;
+.fa-cart {
+  font-size: 22px;
 }
 
-.add-to-cart img:hover {
+.fa-cart:hover {
   cursor: pointer;
   transform: scale(1.05);
 }

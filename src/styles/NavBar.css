@@ -4,6 +4,7 @@
   align-items: center;
   padding: 10px 20px;
   background: rgb(246, 246, 248);
+  border-bottom: 5px solid rgb(20, 114, 12);
 }
 
 .text-links {

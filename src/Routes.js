@@ -8,10 +8,10 @@ function Routes() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={App} />
-        <Route exact path="/shop" component={Shop} />
-        <Route exact path="/shop/:id" component={ShopDetail} />
-        <Route path="/cart" component={Cart} />
+        <Route exact path="/shopping-cart/" component={App} />
+        <Route exact path="/shopping-cart/shop" component={Shop} />
+        <Route exact path="/shopping-cart/shop/:id" component={ShopDetail} />
+        <Route path="/shopping-cart/cart" component={Cart} />
       </Switch>
     </BrowserRouter>
   );

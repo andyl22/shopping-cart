@@ -1,6 +1,7 @@
 import React from "react";
 import productData from "./productData";
 import '../styles/CartItem.css'
+import AddItemToCart from "./AddItemToCart";
 
 function CartItem(props) {
   const product = productData.find(obj => obj.id === props.id)
@@ -11,10 +12,7 @@ function CartItem(props) {
       <div className = 'product-details'>
         <img src= {product.imgSource} alt = {product.name} />
         <div className = 'cart-price-info'>
-          <p> {product.name } </p>
-          <p> Quantity: {props.quantity} </p>
-          <p> Price Each: ${product.price} </p>
-          <p><strong>Total Price: ${props.totalPrice} </strong></p>
+          <AddItemToCart name={props.name} price={props.price} id={props.id} quantity= {props.quantity} setCartTotal={props.setCartTotal}/>
         </div>
       </div>
       <div className = 'line'></div>

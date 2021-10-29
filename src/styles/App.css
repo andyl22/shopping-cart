@@ -15,7 +15,7 @@ header {
   display: flex;
   flex-grow: 0;
   flex-direction: column;
-  border-bottom: 2px solid rgb(201 133 133);
+  border-bottom: 2px solid rgb(121, 87, 51);
   background: rgb(235, 189, 104);
 }
 
@@ -33,7 +33,6 @@ main {
   flex-direction: column;
   width: 100%;
   min-height: 100%;
-  background: url('../assets/images/background.jpg');
   background-size: contain;
   background-repeat:round;
 }

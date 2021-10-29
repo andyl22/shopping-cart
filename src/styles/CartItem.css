@@ -26,3 +26,15 @@
   align-items: center;
   margin: 15px 0px;
 }
+
+.cart-price-info .add-bar {
+  flex-direction: column;
+  align-items: center;
+  background: none;
+}
+
+.cart-price-info .add-bar .quantity-control {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}

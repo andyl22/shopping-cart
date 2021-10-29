@@ -17,7 +17,7 @@ function shopDetail(props) {
       <main className='shop-detail'>
         <div className='item-detail-container'>
           <img src={product.imgSource} alt={product.name}></img>
-          <AddItemToCart name = {product.name} price={product.price} id={product.id}/>
+          <AddItemToCart name = {product.name} price={product.price} id={product.id} quantity='1'/>
         </div>
       </main>
     </div>

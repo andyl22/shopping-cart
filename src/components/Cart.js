@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CartItem from "./CartItem";
 import Header from "./Header";
 import useCart from "./useCart";
-import '../styles/Cart.css'
+import '../styles/Cart.css';
 
 function Cart() {
-  const {cart, addToCart, removeFromCart} = useCart();
-  const mappedCart = cart.map(obj => <CartItem key = {obj.id} id = {obj.id} quantity = {obj.quantity} totalPrice = {obj.totalPrice} />);
-  const totalPrice = cart.reduce((rollingSum, obj) => {
-    return rollingSum += obj.totalPrice;
-  },0);
-  const listOfItems = cart.map(obj => <p key={obj.id}>{obj.name}: {obj.quantity}</p>);
-  console.log(cart)
+
+  const {cart, reducePrice} = useCart();
+
+  const [cartTotal, setCartTotal] = useState(reducePrice());
+
+  const mappedCart = cart.map(obj => {
+    return (
+      <div>
+        <CartItem key = {obj.id} id = {obj.id} name = {obj.name} quantity = {obj.quantity} price = {obj.price} totalPrice = {obj.totalPrice} setCartTotal={setCartTotal}/>
+      </div>
+   )
+  }
+  );
 
 
   return (
@@ -24,8 +30,7 @@ function Cart() {
           </div>
           <div className = 'cartSummary'>
             <h2>Cart Summary</h2>
-            <p>Total Price: ${totalPrice}</p>
-            {listOfItems}
+            <p>Total Price: ${cartTotal}</p>
           </div>
         </div>
       </main>

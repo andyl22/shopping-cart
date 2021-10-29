@@ -17,6 +17,8 @@ header {
   flex-direction: column;
   border-bottom: 2px solid rgb(121, 87, 51);
   background: rgb(235, 189, 104);
+  position: sticky;
+  top: 0;
 }
 
 main {
@@ -26,6 +28,8 @@ main {
   align-items: flex-start;
   flex-wrap: wrap;
   background: rgba(82, 76, 53, 0.83);
+  width: 100%;
+  height: 100%;
 }
 
 .App {

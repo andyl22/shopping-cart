@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import CartItem from "./CartItem";
 import Header from "./Header";
 import useCart from "./useCart";
@@ -25,12 +25,14 @@ function Cart() {
       <Header pageHeader='My Cart'/>
       <main>
         <div className='cart'>
-          <div className = 'cartItems'>
-            {(cart.length===0) ? <p>Empty Cart!<br/> Add some Items!</p> : mappedCart }
-          </div>
-          <div className = 'cartSummary'>
-            <h2>Cart Summary</h2>
-            <p>Total Price: ${cartTotal}</p>
+          <div className='cart-container'>
+            <div className = 'cartItems'>
+              {(cart.length===0) ? <p>Empty Cart!<br/> Add some Items!</p> : mappedCart }
+            </div>
+            <div className = 'cartSummary'>
+              <h2>Cart Summary</h2>
+              <p>Total Price: ${cartTotal}</p>
+            </div>
           </div>
         </div>
       </main>

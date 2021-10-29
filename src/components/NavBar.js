@@ -8,11 +8,11 @@ function NavBar() {
   return (
     <div className='nav-bar'>
       <div className='text-links'>
-        <Link to='/'>Home</Link>
-        <Link to='/shop'>Shop</Link>
+        <Link to='/shopping-cart'>Home</Link>
+        <Link to='/shopping-cart/shop'>Shop</Link>
       </div>
       <div>
-        <Link to='/cart'>
+        <Link to='/shopping-cart/cart'>
           <FontAwesomeIcon icon={ faShoppingCart } className='cart-icon' color='red'/>
         </Link>
       </div>

@@ -3,8 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background: #ecf5ff;
-  border-bottom: 5px solid rgb(129, 209, 122);
+  border-bottom: 5px solid rgb(201 133 133);
 }
 
 .text-links {
@@ -15,7 +14,12 @@
   color: white;
 }
 
+.text-links a:hover, .cart-icon:hover {
+  transform: scale(1.1);
+  color: orangered;
+}
+
 .cart-icon {
-  height: 25px;
+  height: 15px;
   color: white;
 }

@@ -2,6 +2,7 @@ h1 {
   text-align: center;
   padding: 20px 0px;
   color: white;
+  background: rgb(148, 137, 115);
 }
 
 #root {
@@ -14,8 +15,8 @@ header {
   display: flex;
   flex-grow: 0;
   flex-direction: column;
-  background: rgb(58, 29, 7);
-  border-bottom: 5px solid rgb(129, 209, 122);
+  border-bottom: 2px solid rgb(201 133 133);
+  background: rgb(235, 189, 104);
 }
 
 main {
@@ -24,6 +25,7 @@ main {
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
+  background: rgba(82, 76, 53, 0.83);
 }
 
 .App {
@@ -31,7 +33,9 @@ main {
   flex-direction: column;
   width: 100%;
   min-height: 100%;
-  background: rgb(240, 236, 229);
+  background: url('../assets/images/background.jpg');
+  background-size: contain;
+  background-repeat:round;
 }
 
 .home-content {
@@ -42,18 +46,20 @@ main {
   height: 100%;
   gap: 10px;
   margin: 0 auto;
-  padding: 30px 0px;
+  padding: 60px 0px;
 }
 
 .flowers-container {
   display: flex;
   flex-direction: column;
   width: 95%;
-  gap: 10px;
+  gap: 40px;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .flowers-container img {
   border-radius: 20px;
+  border: 2px solid rgb(123, 163, 58);
   width: 100%;
 }

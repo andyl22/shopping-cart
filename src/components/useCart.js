@@ -10,7 +10,6 @@ const useCart = () => {
       console.log(existingObj)
       const cartIndex = cart.findIndex(obj => obj.id === existingObj.id);
       cart[cartIndex] = existingObj;
-      console.log('test')
     } else {
       cart = ([...cart, item]);
     }

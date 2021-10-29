@@ -7,7 +7,7 @@ import '../styles/ShopDetail.css'
 function ShopItem(props) {
   return (
     <Link to={{
-      pathname: `/shop/${props.id}`,
+      pathname: `/shopping-cart/shop/${props.id}`,
       state: {
         props: props,
       }

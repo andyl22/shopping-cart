@@ -13,6 +13,19 @@
 }
 
 .shop-detail {
+  padding-bottom: 100px;
+  flex-direction: column;
+  gap: 50px;
   align-items: center;
 }
 
+@media (max-width: 800px) {
+  .item-detail-container {
+    width: 80%;
+  }
+  
+  .item-detail-container img {
+    width: 100%;
+    height: 100%;
+  }
+}

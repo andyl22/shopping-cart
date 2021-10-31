@@ -26,7 +26,7 @@ function Cart() {
       <main>
         <div className='cart'>
           <div className='cart-container'>
-            <div className = 'cartItems'>
+            <div className = 'cart-items'>
               {(cart.length===0) ? <p>Empty Cart!<br/> Add some Items!</p> : mappedCart }
             </div>
             <div className = 'cartSummary'>

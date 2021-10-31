@@ -1,6 +1,7 @@
 .nav-bar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px 0px;
   border-bottom: 5px solid rgb(201 133 133);
   position: relative;
@@ -12,17 +13,13 @@
   gap: 15px;
   font-weight: 600;
   font-size: 16px;
-  color: white;
-  padding: 0px 20px;
-}
-
-.text-links a:hover, .cart-icon:hover {
-  transform: scale(1.1);
-  color: orangered;
+  padding: 0 20px;
 }
 
 .cart-icon {
-  height: 15px;
-  color: white;
-  padding: 0px 15px;
+  padding: 0 15px;
+}
+
+.cart-icon:hover {
+  transform: scale(1.1);
 }

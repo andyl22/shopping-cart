@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import '../styles/AddItemToCart.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMinus, faPlus, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import {FaCartPlus, FaMinusCircle, FaPlusCircle} from 'react-icons/fa'
 import useCart from './useCart'
 
 
@@ -16,8 +15,8 @@ function AddItemToCart(props) {
   }
 
   function incQuantity() {
-    if (quantity>=999) {
-      setQuantity(999);
+    if (quantity>=99) {
+      setQuantity(99);
     } else {
       setQuantity(quantity +1);
     }
@@ -32,7 +31,7 @@ function AddItemToCart(props) {
   function setInputQuantity(e) {
     const value = parseInt(e.target.value);
     if (value) {
-      (value >= 999) ? setQuantity(999) : setQuantity(value);
+      (value >= 99) ? setQuantity(99) : setQuantity(value);
     } else {
       setQuantity(1);
     }
@@ -46,16 +45,16 @@ function AddItemToCart(props) {
 
   return (
     <div className='add-bar'>
-      <h2>{props.name}</h2>
       <div className='quantity-control'>
-        <button><FontAwesomeIcon icon={ faMinus } className='fa-quantity' onClick={decQuantity}/></button>
+        <button><FaMinusCircle size="1.5em" color="#1c1200" className='fa-quantity' onClick={decQuantity}/></button>
         <input type='text' value = { quantity } onChange = {setInputQuantity}/>
-        <button><FontAwesomeIcon icon={ faPlus } className='fa-quantity' onClick={incQuantity}/></button>
+        <button><FaPlusCircle size="1.5em" color="#1c1200" className='fa-quantity' onClick={incQuantity} /></button>
       </div>
+      <div className='item-name'><h2>{props.name}</h2></div>
       <div className='add-to-cart'>
         <p>${totalPrice}</p>
-        <button>
-          <FontAwesomeIcon icon={ faShoppingCart } className='fa-cart' onClick={addItemToCart}/>
+        <button className='add-cart-button'>
+          <FaCartPlus size="2em" color="#1c1200" className='fa-cart' onClick={addItemToCart}/>
         </button>
       </div>
     </div>

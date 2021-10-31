@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import '../styles/NavBar.css';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaShoppingCart } from 'react-icons/fa';
 
 function NavBar() {
   return (
@@ -13,7 +12,7 @@ function NavBar() {
       </div>
       <div>
         <Link to='/shopping-cart/cart'>
-          <FontAwesomeIcon icon={ faShoppingCart } className='cart-icon' color='red'/>
+          <FaShoppingCart className='cart-icon' size='1.5em'/>
         </Link>
       </div>
     </div>

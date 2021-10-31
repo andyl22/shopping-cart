@@ -5,7 +5,7 @@ import { FaShoppingCart } from 'react-icons/fa';
 
 function NavBar() {
   return (
-    <div className='nav-bar'>
+    <nav className='nav-bar'>
       <div className='text-links'>
         <Link to='/shopping-cart'>Home</Link>
         <Link to='/shopping-cart/shop'>Shop</Link>
@@ -15,7 +15,7 @@ function NavBar() {
           <FaShoppingCart className='cart-icon' size='1.5em'/>
         </Link>
       </div>
-    </div>
+    </nav>
   )
 }
 

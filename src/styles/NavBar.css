@@ -1,9 +1,9 @@
 .nav-bar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 10px 0px;
-  border-bottom: 5px solid rgb(201 133 133);
+  border-bottom: 3px solid rgb(201 133 133);
   position: relative;
   top: 0;
 }
@@ -22,4 +22,10 @@
 
 .cart-icon:hover {
   transform: scale(1.1);
+}
+
+@media (max-width: 800px) {
+  .text-links {
+    flex-direction: column;
+  }
 }

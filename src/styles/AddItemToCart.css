@@ -1,7 +1,7 @@
 @keyframes growout {
-  0% { transform: scale(0.0); opacity: 1; color: greenyellow;}
-  40% { transform: scale(1.5); opacity: 0.6; color: greenyellow;}
-  100% { transform: scale(1.0); opacity: 1;}
+  0% { transform: scale(1.0);}
+  70% { transform: scale(1.5);}
+  100% { transform: scale(1.0);}
 }
 
 .add-bar {
@@ -59,13 +59,12 @@
 
 .add-cart-button:hover .fa-cart {
   cursor: pointer;
-  color:greenyellow !important;
   transform: scale(1.1);
   transition-duration: 0.5s;
 }
 
 .add-cart-button:focus .fa-cart {
-  animation: growout 2s;
+  animation: growout 1s;
 }
 
 .add-cart-button:active .fa-cart {

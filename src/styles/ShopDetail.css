@@ -19,6 +19,10 @@
   align-items: center;
 }
 
+.shop-detail a:hover {
+  color: blue;
+}
+
 @media (max-width: 800px) {
   .item-detail-container {
     width: 80%;

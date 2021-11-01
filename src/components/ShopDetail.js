@@ -1,6 +1,6 @@
 import React from "react";
 import productData from "./productData";
-import NavBar from "./NavBar";
+import Header from "./Header";
 import AddItemToCart from "./AddItemToCart";
 
 function shopDetail(props) {
@@ -10,10 +10,7 @@ function shopDetail(props) {
 
   return (
     <div className='App'>
-      <header>
-        <NavBar />
-        <h1>{product.name}</h1>
-      </header>
+      <Header pageHeader={product.name}/>
       <main className='shop-detail'>
         <div className='item-detail-container'>
           <img src={product.imgSource} alt={product.name}></img>

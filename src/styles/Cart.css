@@ -7,9 +7,14 @@
   height: 100%;
   background: white;
   gap: 100px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 cart-items {
   display: flex;
   width: 100%;
+}
+
+.cart-summary p {
+  font-size: 18px;
 }

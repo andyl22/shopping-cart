@@ -22,14 +22,14 @@ function Cart() {
 
   return (
     <div className='App'>
-      <Header pageHeader='My Cart'/>
+      <Header pageHeader='Shopping Cart'/>
       <main>
         <div className='cart'>
           <div className='cart-container'>
             <div className = 'cart-items'>
               {(cart.length===0) ? <p>Empty Cart!<br/> Add some Items!</p> : mappedCart }
             </div>
-            <div className = 'cartSummary'>
+            <div className = 'cart-summary'>
               <h2>Cart Summary</h2>
               <p>Total Price: ${cartTotal}</p>
             </div>

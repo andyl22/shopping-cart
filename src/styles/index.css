@@ -9,7 +9,7 @@ a {
 }
 
 a:hover {
-  color: red;
+  color: #9d0000;
   transform: scale(1.1);
 }
 

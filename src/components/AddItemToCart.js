@@ -40,6 +40,7 @@ function AddItemToCart(props) {
   useEffect(() => {
     setTotalPrice(props.price*quantity);
   },
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   [quantity]
   )
 

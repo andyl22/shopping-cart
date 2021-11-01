@@ -4,8 +4,7 @@ import NavBar from "./NavBar";
 function Header(props) {
   return (
     <header>
-      <NavBar />
-      <h1>{props.pageHeader}</h1>
+      <NavBar pageHeader = {props.pageHeader}/>
     </header>
   )
 }

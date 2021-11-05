@@ -23,7 +23,7 @@ function AddItemToCart(props) {
   }
 
   function decQuantity() {
-    if (quantity>1) {
+    if (quantity>0) {
       setQuantity(quantity - 1);
     }
   }
@@ -33,7 +33,7 @@ function AddItemToCart(props) {
     if (value) {
       (value >= 99) ? setQuantity(99) : setQuantity(value);
     } else {
-      setQuantity(1);
+      setQuantity(0);
     }
   }
 
